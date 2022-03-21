@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>
+            Define a direção dos flex itens. Por padrão ele é row (linha), por isso quando o display: 
+            flex; é adicionado, os elementos ficam em linha, um do lado do outro.
+
+        A mudança de row para column geralmente acontece quando estamos definindo 
+        os estilos em media queries para o mobile. Assim você garante que o conteúdo 
+        seja apresentado em coluna única.</h1>
+        <hr>
+            <h1>
+                flex-direction: row;
+                // Os itens ficam em linha
+            </h1>
+                
+            <h1>
+                flex-direction: row-reverse;
+                // Os itens ficam em linha reversa, ou seja 3, 2, 1.
+            </h1>
+               
+            <h1>
+                flex-direction: column;
+                // Os itens ficam em uma única coluna, um embaixo do outro.
+            </h1>
+               
+            <h1>
+                flex-direction: column-reverse;
+                // Os itens ficam em uma única coluna, um embaixo do outro, porém em ordem reversa: 3, 2 e 1.
+            </h1>
+           
+            <h1>flex-direction: row;</h1>
+            <section class="container row">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </section>
+            <h1>flex-direction: row-reverse;</h1>
+            <section class="container row-reverse">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </section>
+            <h1>flex-direction: column;</h1>
+            <section class="container column">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </section>
+            <h1>flex-direction: column-reverse;</h1>
+            <section class="container column-reverse">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </section>
+        </body>
+    </html>
